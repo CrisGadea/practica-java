@@ -4,31 +4,31 @@ public class Main {
     public static void main(String [] args){
 
         // Declaración de variables y constantes en Java
-        int numero = 10;
+        //int numero = 10;
 
         // Constantes
-        final String fecha_nacimiento = "18/12/1996";
+        //final String fecha_nacimiento = "18/12/1996";
 
         //System.out.println("Nací el día: " + fecha_nacimiento);
         //System.out.println("Hola mundo desde Java");
 
         // Array de 10 nombres en Java
-        String nombres [];
+        //String nombres [];
         // Inicializo el Array
-        nombres = new String[10];
+        //nombres = new String[10];
 
-        int edad = 20;
+        //int edad = 20;
 
         // Asigno valores al Array
         // 0 1 2 3 4 5 6 7 8 9
 
         // En el primer índice, asigno el nombre Cristian
-        nombres[0] = "Cristian";
-        nombres[1] = "Juan";
-        nombres[2] = "Micaela";
-        nombres[3] = "Gio";
-        nombres[4] = "Gloria";
-        nombres[5] = "Carmen";
+//        nombres[0] = "Cristian";
+//        nombres[1] = "Juan";
+//        nombres[2] = "Micaela";
+//        nombres[3] = "Gio";
+//        nombres[4] = "Gloria";
+//        nombres[5] = "Carmen";
 
         //System.out.println(nombres[0]);
 
@@ -49,7 +49,7 @@ public class Main {
 //            i++;
 //        }while (i < nombres.length);
 
-        String respuesta;
+        //String respuesta;
 
         // Operador ternario condicion ? (resultado ok) : (resultado negativo)
         //respuesta = edad > 18 ? "Es mayor de edad" : "Es menor de edad";
@@ -61,36 +61,44 @@ public class Main {
 
         // System.out.print/println: Mostarmos datos por consola
         // Para capturar datos por teclado declaramos un objeto del tipo Scanner
-        Scanner sc = new Scanner(System.in);
+//        Scanner sc = new Scanner(System.in);
+//
+//        int opcion = 0;
+//        while (opcion != 3){
+//            System.out.println("---------- Menú ----------");
+//            System.out.println("Ingrese una opción:");
+//            System.out.println("1) Ingresar número");
+//            System.out.println("2) Mostrar tabla del numero (hasta el 10)");
+//            System.out.println("3) Salir");
+//            opcion = sc.nextInt();
+//            int number = 0;
+//            switch (opcion){
+//                case 1:
+//                    System.out.println("Ingrese el número para obtener su tabla de multiplicar:");
+//                    numero = sc.nextInt();
+//                    break;
+//                case 2:
+//                    for (int j = 0; j <= 10; j++){
+//                        System.out.println(numero + " * " + j + " = " + numero * j);
+//                    }
+//                    break;
+//                case 3:
+//                    System.out.println("Salimos del sistema");
+//                    break;
+//                default:
+//                    System.out.println("Ingrese una opción correcta");
+//            }
+//        }
 
-        int opcion = 0;
-        while (opcion != 3){
-            System.out.println("---------- Menú ----------");
-            System.out.println("Ingrese una opción:");
-            System.out.println("1) Ingresar número");
-            System.out.println("2) Mostrar tabla del numero (hasta el 10)");
-            System.out.println("3) Salir");
-            opcion = sc.nextInt();
-            int number = 0;
-            switch (opcion){
-                case 1:
-                    System.out.println("Ingrese el número para obtener su tabla de multiplicar:");
-                    numero = sc.nextInt();
-                    break;
-                case 2:
-                    for (int j = 0; j <= 10; j++){
-                        System.out.println(numero + " * " + j + " = " + numero * j);
-                    }
-                    break;
-                case 3:
-                    System.out.println("Salimos del sistema");
-                    break;
-                default:
-                    System.out.println("Ingrese una opción correcta");
-            }
-        }
 
 
+        // POO Clase Animal
+        // Instanciar un objeto de la clase Animal
+        Animal firulais = new Animal("Firulais", "caniche", "marrón", 2, "perro");
+
+        System.out.println("Primera ejecución: " + firulais.getNombre());
+        firulais.setNombre("Firulaisito");
+        System.out.println("Segunda ejecución: " + firulais.getNombre());
 
     }
 }
